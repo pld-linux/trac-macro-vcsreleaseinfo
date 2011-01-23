@@ -10,6 +10,7 @@ Source0:	http://trac-hacks.org/changeset/latest/vcsreleaseinfomacro?old_path=/&f
 # Source0-md5:	6f864043c4e3f6efda71cfdad1fef5ed
 URL:		http://trac-hacks.org/wiki/VcsReleaseInfoMacro
 BuildRequires:	python-devel
+BuildRequires:	unzip
 # if 0.13 cames into play, can sanitize this again	
 Requires:	trac >= %{trac_ver}-6
 BuildArch:	noarch
