@@ -3,11 +3,11 @@
 Summary:	VCS Release Info Macro for Trac
 Name:		trac-macro-%{plugin}
 Version:	0.1
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Applications/WWW
 Source0:	http://trac-hacks.org/changeset/latest/vcsreleaseinfomacro?old_path=/&filename=vcsreleaseinfomacro&format=zip#/%{plugin}-%{version}.zip
-# Source0-md5:	6f864043c4e3f6efda71cfdad1fef5ed
+# Source0-md5:	b8db038c683f5095451019b609855ccb
 URL:		http://trac-hacks.org/wiki/VcsReleaseInfoMacro
 BuildRequires:	unzip
 # if 0.13 cames into play, can sanitize this again
