@@ -3,11 +3,11 @@
 Summary:	VCS Release Info Macro for Trac
 Name:		trac-macro-%{plugin}
 Version:	0.1
-Release:	4
+Release:	5
 License:	BSD-like
 Group:		Applications/WWW
-Source0:	http://trac-hacks.org/changeset/latest/vcsreleaseinfomacro?old_path=/&filename=vcsreleaseinfomacro&format=zip#/%{plugin}-%{version}.zip
-# Source0-md5:	4e3dacb030efa33ee965643cebe7e631
+Source0:	http://trac-hacks.org/changeset/latest/vcsreleaseinfomacro?old_path=/&filename=vcsreleaseinfomacro&format=zip&/%{plugin}-%{version}.zip
+# Source0-md5:	ce6c5f4f0b44abdf9fa1cef31d3c651e
 URL:		http://trac-hacks.org/wiki/VcsReleaseInfoMacro
 BuildRequires:	unzip
 # if 0.13 cames into play, can sanitize this again
@@ -22,6 +22,7 @@ VCS Release Info macro takes list of tags from your project VCS and
 formats the list.
 
 %prep
+%define	__unzip unpack() { unzip "$@" || : ; }; unpack
 %setup -qc
 mv %{plugin}macro/* .
 
